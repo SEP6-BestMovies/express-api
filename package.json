@@ -1,0 +1,22 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+ssh://git@github.com/SEP6-BestMovies/express-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SEP6-BestMovies/express-api/issues"
+  },
+  "homepage": "https://github.com/SEP6-BestMovies/express-api#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
