@@ -54,7 +54,7 @@ env:
   SERVICE: movies-google-run # Cloud Run service name
   REGION: europe-north1 # Cloud Run service region
   IMG_REPO: eu.gcr.io
-  IMAGE_NAME: com/via/sep6/bestmovies/frontend
+  IMAGE_NAME: com/via/sep6/bestmovies/backend
 
 jobs:
   deploy:
@@ -73,8 +73,8 @@ jobs:
         uses: 'google-github-actions/auth@v1'
         with:
           project_id: ${{ env.PROJECT_ID }}
-          service_account: ${{ secrets.WIF_SERVICE_ACCOUNT }}
-          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+          service_account: ${{ secrets.SERVICE_ACCOUNT }}
+          credentials_json: ${{ secrets.SERVICE_ACCOUNT_KEY }}
 
       #NOTE: Alternative option - authentication via credentials json
       #- name: Google Auth
